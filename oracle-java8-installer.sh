@@ -5,7 +5,7 @@
 case "$1" in
 	arm)
 #!/bin/bash
-apt update && apt install wget -y && wget "https://github.com/MFDGaming/Oracle-JAVA-8-installer-for-linux/blob/master/java_arm.tar.gz -O java.tar.gz" && mkdir "/opt/java" && tar -C /opt/java -zxvf "java.tar.gz" && rm "java.tar.gz" && update-alternatives --install /usr/bin/java java /opt/java/jre/bin/java 2000 && echo /opt/java/jre/lib/arm/jli | tee -a /etc/ld.so.conf && ldconfig
+apt update && apt install wget -y && wget "https://github.com/MFDGaming/Oracle-JAVA-8-installer-for-linux/raw/master/java_arm.tar.gz -O java.tar.gz" && mkdir "/opt/java" && tar -C /opt/java -zxvf "java.tar.gz" && rm "java.tar.gz" && update-alternatives --install /usr/bin/java java /opt/java/jre/bin/java 2000 && echo /opt/java/jre/lib/arm/jli | tee -a /etc/ld.so.conf && ldconfig
 	    ;;
 	arm64)
 
