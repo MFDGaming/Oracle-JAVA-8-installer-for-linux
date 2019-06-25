@@ -14,7 +14,7 @@ apt update && apt install wget -y && wget "https://github.com/MFDGaming/Oracle-J
 
 	    ;;
 	x64)
-
+apt update && apt install wget -y && wget "https://github.com/MFDGaming/Oracle-JAVA-8-installer-for-linux/raw/master/java_x64.tar.gz" && mkdir "/opt/java" && tar -C /opt/java -zxvf "java_x64.tar.gz" && rm "java_x64.tar.gz" && update-alternatives --install /usr/bin/java java /opt/java/jre/bin/java 2000 && echo /opt/java/jre/lib/arm/jli | tee -a /etc/ld.so.conf && ldconfig
             ;;
 	*)
 	    echo $"
