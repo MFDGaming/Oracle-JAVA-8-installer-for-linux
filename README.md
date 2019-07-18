@@ -1,4 +1,4 @@
-# Oracle-JAVA-8-installer-for-linux
+# Oracle-JAVA-8-installer-for-linux (only arm and x64)
 With this script you can install oracle java 8 on linux
 
 
